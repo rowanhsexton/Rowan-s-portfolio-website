@@ -10,6 +10,24 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body style="--c: #A09CFF;">
+  <!-- PASSWORD GATE -->
+  <div class="pw-gate" id="pwGate">
+    <div class="pw-gate-inner">
+      <a href="index.html" class="pw-gate-logo">Rowan Sexton</a>
+      <div>
+        <p class="pw-gate-label">Case Studies</p>
+        <h2 class="pw-gate-title">Password required</h2>
+      </div>
+      <div style="width:100%">
+        <div class="pw-gate-form">
+          <input class="pw-gate-input" id="pwInput" type="password" placeholder="Enter password" autocomplete="off" />
+          <button class="pw-gate-btn" id="pwBtn">Unlock</button>
+        </div>
+        <p class="pw-gate-error" id="pwError">Incorrect password. Try again.</p>
+      </div>
+    </div>
+  </div>
+
 
   <!-- CURSOR GLOW -->
   <div class="cursor-glow" id="cursorGlow"></div>

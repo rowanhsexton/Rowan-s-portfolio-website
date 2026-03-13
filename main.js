@@ -3,6 +3,49 @@
    main.js
    ============================================= */
 
+/* --- PASSWORD GATE --- */
+(function () {
+  const gate = document.getElementById('pwGate');
+  if (!gate) return;
+
+  const input = document.getElementById('pwInput');
+  const btn   = document.getElementById('pwBtn');
+  const error = document.getElementById('pwError');
+  const HASH  = '9ba1e2e9258f8ee3eaa0538231a50af2f8cef5b3cba2ffbe9c5dddac8d6196ed';
+
+  async function sha256(str) {
+    const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
+    return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+  }
+
+  if (sessionStorage.getItem('cs_unlocked') === '1') {
+    gate.remove();
+    return;
+  }
+
+  async function attempt() {
+    const hash = await sha256(input.value.trim());
+    if (hash === HASH) {
+      sessionStorage.setItem('cs_unlocked', '1');
+      gate.style.opacity = '0';
+      gate.style.transition = 'opacity 0.3s ease';
+      setTimeout(() => gate.remove(), 300);
+    } else {
+      input.classList.add('error');
+      error.classList.add('visible');
+      input.value = '';
+      input.focus();
+    }
+  }
+
+  btn.addEventListener('click', attempt);
+  input.addEventListener('keydown', e => {
+    if (e.key === 'Enter') attempt();
+    input.classList.remove('error');
+    error.classList.remove('visible');
+  });
+})();
+
 /* --- TESTIMONIAL TEXT FIT (binary search) --- */
 (function () {
   const cards = Array.from(document.querySelectorAll('.testi-card'));
