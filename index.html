@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rowan Sexton — Senior UX Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- CURSOR GLOW -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Rowan Sexton</a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+
+        <li class="nav-dropdown-wrapper">
+          <a href="#case-studies" class="nav-link nav-dropdown-trigger">
+            Case Studies
+            <svg class="dropdown-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none">
+              <path d="M1 1.5l5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <div class="nav-dropdown">
+            <div class="dropdown-inner">
+              <a href="cs-roche-image-viewer.html" class="dropdown-item">
+                <div class="dropdown-dot" style="background:#7C72FF;"></div>
+                <div>
+                  <span class="dropdown-item-label">Roche Image Viewer</span>
+                  <span class="dropdown-item-meta">UX Leadership · Digital Pathology</span>
+                </div>
+              </a>
+              <a href="cs-modular-figma.html" class="dropdown-item">
+                <div class="dropdown-dot" style="background:#4DE38A;"></div>
+                <div>
+                  <span class="dropdown-item-label">Modular Figma Frame</span>
+                  <span class="dropdown-item-meta">Design Systems · Figma</span>
+                </div>
+              </a>
+              <a href="cs-right-place-right-time.html" class="dropdown-item">
+                <div class="dropdown-dot" style="background:#00C9F5;"></div>
+                <div>
+                  <span class="dropdown-item-label">Right Place, Right Time</span>
+                  <span class="dropdown-item-meta">Interaction Design · Safety</span>
+                </div>
+              </a>
+              <a href="cs-algorithm-workflows.html" class="dropdown-item">
+                <div class="dropdown-dot" style="background:#A09CFF;"></div>
+                <div>
+                  <span class="dropdown-item-label">Algorithm Workflows</span>
+                  <span class="dropdown-item-meta">UX Research · Digital Pathology</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <li><a href="about.html" class="nav-link">About Me</a></li>
+      </ul>
+
+      <a href="https://www.rowanhsexton.com/s/UX-Design-Consultant-Resume-UPDATED-2025-no-pw-7.pdf" target="_blank" rel="noopener" class="btn-resume" id="resumeBtn">Download Resume</a>
+
+      <button class="nav-burger" aria-label="Open menu" id="burger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div id="navProgress"></div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-link">Home</a>
+      <button class="mobile-link mobile-dropdown-toggle" id="mobileDropdownToggle">
+        Case Studies
+        <svg class="dropdown-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none">
+          <path d="M1 1.5l5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <div class="mobile-dropdown-list" id="mobileDropdownList">
+        <a href="cs-roche-image-viewer.html" class="mobile-sub-link">Roche Image Viewer</a>
+        <a href="cs-modular-figma.html" class="mobile-sub-link">Modular Figma Frame</a>
+        <a href="cs-right-place-right-time.html" class="mobile-sub-link">Right Place, Right Time</a>
+        <a href="cs-algorithm-workflows.html" class="mobile-sub-link">Algorithm Workflows</a>
+      </div>
+      <a href="about.html" class="mobile-link">About Me</a>
+      <a href="https://www.rowanhsexton.com/s/UX-Design-Consultant-Resume-UPDATED-2025-no-pw-7.pdf" target="_blank" rel="noopener" class="mobile-link mobile-resume-link">Download Resume</a>
+    </div>
+  </nav>
+
+  <!-- HERO / INTRO -->
+  <section id="hero">
+    <div class="unicorn-bg">
+      <div data-us-project="guBFbtYWCRjCdVjdCAt4" style="width:100%;height:100%;"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag reveal">
+        <span class="hero-tag-dot"></span>
+        Available for new projects
+      </div>
+      <h1 class="hero-heading reveal">
+        Hello, I'm <span class="text-gradient">Rowan.</span>
+      </h1>
+      <p class="hero-bio reveal">
+        I am a <strong>Senior UX Designer</strong> @ <a href="https://www.concordusa.com/" target="_blank" rel="noopener" class="highlight-pill">Concord USA</a>, currently working on Digital Pathology instruments and software products @ <a href="https://diagnostics.roche.com/us/en/home.html" target="_blank" rel="noopener" class="highlight-pill">Roche</a>.
+      </p>
+      <div class="hero-stats reveal">
+        <div class="hero-stat">
+          <span class="hero-stat-value">7+</span>
+          <span class="hero-stat-label">Years Experience</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-value">M.H.C.I.</span>
+          <span class="hero-stat-label">Human Computer Interaction</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-value">BA</span>
+          <span class="hero-stat-label">Psychology</span>
+        </div>
+      </div>
+      <div class="hero-cta reveal">
+        <a href="about.html" class="btn-primary">About Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- All sections below scroll up over the fixed Unicorn background -->
+  <div class="page-content">
+
+  <!-- CASE STUDIES -->
+  <section id="case-studies">
+    <div class="cs-header reveal">
+      <p class="section-eyebrow">Portfolio</p>
+      <h2>Case Studies</h2>
+    </div>
+
+    <div class="cs-stack" id="csStack">
+
+      <article class="cs-card" style="--i:0; --c:#7C72FF;">
+        <a href="cs-roche-image-viewer.html" class="cs-card-link-wrap">
+          <div class="cs-meta">
+            <span class="cs-year">2025</span>
+            <span class="cs-company">Roche</span>
+          </div>
+          <div class="cs-divider"></div>
+          <div class="cs-title-row">
+            <h3 class="cs-title">Roche Image Viewer</h3>
+            <div class="cs-arrow-wrap" aria-label="View case study">
+              <svg class="cs-arrow-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M2 14L14 2M14 2H6M14 2V10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="cs-img-placeholder">
+            <img src="https://images.squarespace-cdn.com/content/v1/60b06e9e00df1646f49b349d/ec7d2549-e360-435b-8b01-0aa541010c68/ndp.png" alt="Roche digital pathology image viewer" loading="lazy">
+          </div>
+        </a>
+      </article>
+
+      <article class="cs-card" style="--i:1; --c:#4DE38A;">
+        <a href="cs-modular-figma.html" class="cs-card-link-wrap">
+          <div class="cs-meta">
+            <span class="cs-year">2024</span>
+            <span class="cs-company">Roche</span>
+          </div>
+          <div class="cs-divider"></div>
+          <div class="cs-title-row">
+            <h3 class="cs-title">Modular Figma Frame</h3>
+            <div class="cs-arrow-wrap" aria-label="View case study">
+              <svg class="cs-arrow-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M2 14L14 2M14 2H6M14 2V10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="cs-img-placeholder">
+            <img src="https://images.squarespace-cdn.com/content/v1/60b06e9e00df1646f49b349d/2e347240-c70a-4631-8e8d-63bcf49ab799/modular-figmaimage3.png" alt="Modular Figma frame" loading="lazy">
+          </div>
+        </a>
+      </article>
+
+      <article class="cs-card" style="--i:2; --c:#00C9F5;">
+        <a href="cs-right-place-right-time.html" class="cs-card-link-wrap">
+          <div class="cs-meta">
+            <span class="cs-year">2024</span>
+            <span class="cs-company">Roche</span>
+          </div>
+          <div class="cs-divider"></div>
+          <div class="cs-title-row">
+            <h3 class="cs-title">Right Place, Right Time</h3>
+            <div class="cs-arrow-wrap" aria-label="View case study">
+              <svg class="cs-arrow-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M2 14L14 2M14 2H6M14 2V10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="cs-img-placeholder">
+            <img src="images/cs-right-place.png" alt="Right place right time" loading="lazy">
+          </div>
+        </a>
+      </article>
+
+      <article class="cs-card" style="--i:3; --c:#A09CFF;">
+        <a href="cs-algorithm-workflows.html" class="cs-card-link-wrap">
+          <div class="cs-meta">
+            <span class="cs-year">2023</span>
+            <span class="cs-company">Roche</span>
+          </div>
+          <div class="cs-divider"></div>
+          <div class="cs-title-row">
+            <h3 class="cs-title">Algorithm Workflows</h3>
+            <div class="cs-arrow-wrap" aria-label="View case study">
+              <svg class="cs-arrow-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M2 14L14 2M14 2H6M14 2V10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="cs-img-placeholder">
+            <img src="images/cs-algorithm-workflows.png" alt="Digital pathology algorithm workflows" loading="lazy">
+          </div>
+        </a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div class="testi-sticky">
+    <div class="testi-header reveal">
+      <p class="section-eyebrow">Kind words</p>
+      <h2>What colleagues say</h2>
+    </div>
+
+    <div class="testi-stage">
+
+      <blockquote class="testi-card" style="--i:0; --c:#7C72FF;">
+        <div class="testi-body">
+          <p>I am highly recommending Rowan as a UX/UI Designer, and as a future senior leader. As the VP of SW and Digital Pathology at Roche, I had a very large team that consisted of FTE, Contractors, and Consultants. There were several team members that were consistently praised for their work quality and teamwork. Rowan, as a contractor in my organization, was one of these few. Three things in particular stood out:</p>
+          <p>Rowan's creativity is off the charts! New thinking and ways of looking at problems are one of his key assets.</p>
+          <p>Rowan's understanding of the customer needs and ability to prioritize accordingly exhibit an engineering maturity level beyond his years. He operates in a manner that is definitely higher than his pay grade.</p>
+          <p>EVERYONE enjoys working with Rowan. He is calm, positive thinking, growth oriented, supremely competent, and simply makes everyone on the team better. A true teammate.</p>
+          <p>If you are considering a new UX/UI hire for your organization, Rowan should be high on your list. Please contact me directly through LinkedIn if you would like me to elaborate further regarding Rowan's abilities and history with my past organization.</p>
+        </div>
+        <footer class="testi-attribution">
+          <div>
+            <strong>VP, Software &amp; Digital Pathology Product Development</strong>
+            <span>Roche</span>
+          </div>
+        </footer>
+      </blockquote>
+
+      <blockquote class="testi-card" style="--i:1; --c:#00C9F5;">
+        <div class="testi-body">
+          <p>He continues to be a rock star in our team. This past year Rowan has taken the lead of two new projects and is recognized as a valued collaborator and contributor by project and product leadership. Whenever Rowan takes on a task, project or product I know that I don't have to worry about it and that he will keep me in the loop if it needs my attention.</p>
+          <p>Additionally, his internal drive and motivation enables him to constantly develop new skills and become better at his job. That is very apparent in his mastery of interaction design in Figma, and I also see it in his way to communicate effectively with stakeholders, lead effective user research and create the documentation needed for our medical device projects.</p>
+          <p>Rowan continues to be a most valuable team member in our team and the whole team benefits from his presence.</p>
+        </div>
+        <footer class="testi-attribution">
+          <div>
+            <strong>User Experience Sub-Chapter Lead</strong>
+            <span>Roche</span>
+          </div>
+        </footer>
+      </blockquote>
+
+      <blockquote class="testi-card" style="--i:2; --c:#4DE38A;">
+        <div class="testi-body">
+          <p>For starters, it's important to note that Rowan came to Roche with zero professional experience and a master's degree that was a couple months off from being completed. After 6 months time, Rowan was truly operating at Senior level here at Roche — independently representing the UX team on complex digital pathology algorithm projects, being a "full stack" designer (research, design, human factors) for those projects, and building partnerships with the Roche business and development teams.</p>
+          <p>And it's not just me that noticed Rowan's seamless ascent; our manager, Sam Psota, has mentioned directly to me on several occasions that he is "stunned" how someone seemingly junior in their career could operate as a senior in our complex workspace in less than a year.</p>
+          <p>While Rowan operates as a "full-stack" designer on our project teams, it's clear to me that his greatest strength is in UX visual and interaction design. Rowan has a case to be the best interaction designer on our team. He is profoundly creative in that space — always able to come up with ideas that are outside the box.</p>
+          <p>Rowan had a vision of a "sub-design system", forked off of our global design system, that would enable us to have an organized and scalable Figma project. He created a truly high class design system — with properties, variables, booleans — that would enable every other designer to do their job better and faster. It was a "first of its kind" initiative for Path UX, and it impressed everyone.</p>
+          <p>Overall, Rowan is an extremely beloved member in the Path UX team at Roche — the whole team is better for having him here.</p>
+        </div>
+        <footer class="testi-attribution">
+          <div>
+            <strong>User Experience Colleague</strong>
+            <span>Roche</span>
+          </div>
+        </footer>
+      </blockquote>
+
+    </div>
+    </div><!-- /testi-sticky -->
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="skills-header reveal">
+      <p class="section-eyebrow">Expertise</p>
+      <h2>Skills &amp; Capabilities</h2>
+    </div>
+
+    <div class="skills-grid">
+
+      <div class="skill-category reveal">
+        <div class="skill-cat-header">
+          <div class="skill-icon" style="background: rgba(124,114,255,0.14); color: #7C72FF;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <h3>UI Design</h3>
+        </div>
+        <ul class="skill-list">
+          <li>Workflow Mapping</li>
+          <li>Wireframing</li>
+          <li>Storyboarding</li>
+          <li>High-fidelity Prototyping</li>
+          <li>Iconography</li>
+          <li>Microcopy</li>
+          <li>Design System Creation &amp; Management</li>
+        </ul>
+      </div>
+
+      <div class="skill-category reveal">
+        <div class="skill-cat-header">
+          <div class="skill-icon" style="background: rgba(0,201,245,0.13); color: #00C9F5;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h3>UX Research</h3>
+        </div>
+        <ul class="skill-list">
+          <li>User Interviews</li>
+          <li>Surveys</li>
+          <li>Personas</li>
+          <li>Affinity Mapping</li>
+          <li>Workshopping</li>
+          <li>Feedback Synthesis</li>
+          <li>Data Visualization</li>
+        </ul>
+      </div>
+
+      <div class="skill-category reveal">
+        <div class="skill-cat-header">
+          <div class="skill-icon" style="background: rgba(77,227,138,0.12); color: #4DE38A;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Usability Engineering</h3>
+        </div>
+        <ul class="skill-list">
+          <li>Usability Testing</li>
+          <li>Formative Usability Studies</li>
+          <li>Summative Usability Studies</li>
+          <li>Task Analyses</li>
+          <li>Human Factors</li>
+          <li>Documentation</li>
+          <li>FDA Submissions</li>
+        </ul>
+      </div>
+
+      <div class="skill-category reveal">
+        <div class="skill-cat-header">
+          <div class="skill-icon" style="background: rgba(0,201,245,0.13); color: #00C9F5;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3>Tools</h3>
+        </div>
+        <ul class="skill-list">
+          <li>Figma &amp; FigJam</li>
+          <li>Adobe Creative Suite</li>
+          <li>Jira</li>
+          <li>Miro</li>
+          <li>Google Suite</li>
+          <li>Microsoft Office</li>
+          <li>HTML, CSS &amp; JavaScript</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-header">
+      <p class="section-eyebrow">Get in touch</p>
+      <h2>Interested in connecting?</h2>
+    </div>
+    <div class="contact-inner reveal">
+      <p class="contact-sub">I'm always open to discussing new opportunities, collaborations, or just a good design conversation.</p>
+      <div class="contact-links">
+        <a href="http://LinkedIn.com/in/rowan-sexton" target="_blank" rel="noopener" class="contact-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a href="mailto:rowanhsexton@gmail.com" class="contact-btn contact-btn--ghost">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Send an email
+        </a>
+        <a href="https://www.rowanhsexton.com/s/UX-Design-Consultant-Resume-UPDATED-2025-no-pw-7.pdf" target="_blank" rel="noopener" class="contact-btn contact-btn--ghost">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">Rowan Sexton</span>
+      <div class="footer-links">
+        <a href="http://LinkedIn.com/in/rowan-sexton" target="_blank" rel="noopener" class="footer-social">LinkedIn</a>
+      </div>
+      <a href="#hero" class="footer-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  </div><!-- /page-content -->
+
+  <!-- Sticky scroll CTA -->
+  <button class="sticky-cta" id="stickyCta">See more</button>
+
+  <script src="main.js"></script>
+  <!-- Unicorn Studio SDK -->
+  <script>!function(){var u=window.UnicornStudio;if(u&&u.init){if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",function(){u.init()})}else{u.init()}}else{window.UnicornStudio={isInitialized:!1};var i=document.createElement("script");i.src="https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v2.1.4/dist/unicornStudio.umd.js",i.onload=function(){if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",function(){UnicornStudio.init()})}else{UnicornStudio.init()}},(document.head||document.body).appendChild(i)}}();</script>
+</body>
+</html>

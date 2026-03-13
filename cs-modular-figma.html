@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modular Figma Frame — Rowan Sexton</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body style="--c: #4DE38A;">
+
+  <!-- CURSOR GLOW -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Rowan Sexton</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-dropdown-wrapper">
+          <a href="index.html#case-studies" class="nav-link nav-dropdown-trigger active">
+            Case Studies
+            <svg class="dropdown-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none">
+              <path d="M1 1.5l5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <div class="nav-dropdown">
+            <div class="dropdown-inner">
+              <a href="cs-roche-image-viewer.html" class="dropdown-item">
+                <div class="dropdown-dot" style="background:#7C72FF;"></div>
+                <div>
+                  <span class="dropdown-item-label">Roche Image Viewer</span>
+                  <span class="dropdown-item-meta">UX Leadership · Digital Pathology</span>
+                </div>
+              </a>
+              <a href="cs-modular-figma.html" class="dropdown-item">
+                <div class="dropdown-dot" style="background:#4DE38A;"></div>
+                <div>
+                  <span class="dropdown-item-label">Modular Figma Frame</span>
+                  <span class="dropdown-item-meta">Design Systems · Figma</span>
+                </div>
+              </a>
+              <a href="cs-right-place-right-time.html" class="dropdown-item">
+                <div class="dropdown-dot" style="background:#00C9F5;"></div>
+                <div>
+                  <span class="dropdown-item-label">Right Place, Right Time</span>
+                  <span class="dropdown-item-meta">Interaction Design · Safety</span>
+                </div>
+              </a>
+              <a href="cs-algorithm-workflows.html" class="dropdown-item">
+                <div class="dropdown-dot" style="background:#A09CFF;"></div>
+                <div>
+                  <span class="dropdown-item-label">Algorithm Workflows</span>
+                  <span class="dropdown-item-meta">UX Research · Digital Pathology</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li><a href="about.html" class="nav-link">About Me</a></li>
+      </ul>
+      <a href="https://www.rowanhsexton.com/s/UX-Design-Consultant-Resume-UPDATED-2025-no-pw-7.pdf" target="_blank" rel="noopener" class="btn-resume">Download Resume</a>
+      <button class="nav-burger" aria-label="Open menu" id="burger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div id="navProgress"></div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-link">Home</a>
+      <button class="mobile-link mobile-dropdown-toggle" id="mobileDropdownToggle">
+        Case Studies
+        <svg class="dropdown-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none">
+          <path d="M1 1.5l5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <div class="mobile-dropdown-list" id="mobileDropdownList">
+        <a href="cs-roche-image-viewer.html" class="mobile-sub-link">Roche Image Viewer</a>
+        <a href="cs-modular-figma.html" class="mobile-sub-link">Modular Figma Frame</a>
+        <a href="cs-right-place-right-time.html" class="mobile-sub-link">Right Place, Right Time</a>
+        <a href="cs-algorithm-workflows.html" class="mobile-sub-link">Algorithm Workflows</a>
+      </div>
+      <a href="about.html" class="mobile-link">About Me</a>
+      <a href="https://www.rowanhsexton.com/s/UX-Design-Consultant-Resume-UPDATED-2025-no-pw-7.pdf" target="_blank" rel="noopener" class="mobile-link mobile-resume-link">Download Resume</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="cs-detail-hero">
+      <a href="index.html#case-studies" class="cs-detail-back">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        All Case Studies
+      </a>
+
+      <div class="cs-detail-meta">
+        <span class="cs-detail-tag">Design Systems</span>
+        <span class="cs-detail-tag">Figma</span>
+        <span class="cs-detail-tag">2024</span>
+        <span class="cs-detail-tag">Roche</span>
+      </div>
+
+      <h1 class="cs-detail-title">Modular Figma Frame</h1>
+      <p class="cs-detail-summary">Built a modular, scalable Figma frame system to standardize design components across a multi-product digital pathology design team.</p>
+
+      <div class="cs-detail-stats">
+        <div class="cs-detail-stat">
+          <span class="cs-detail-stat-label">Role</span>
+          <span class="cs-detail-stat-value">Senior UX Designer</span>
+        </div>
+        <div class="cs-detail-stat">
+          <span class="cs-detail-stat-label">Timeline</span>
+          <span class="cs-detail-stat-value">2024</span>
+        </div>
+        <div class="cs-detail-stat">
+          <span class="cs-detail-stat-label">Platform</span>
+          <span class="cs-detail-stat-value">Figma / Design System</span>
+        </div>
+      </div>
+
+      <div class="cs-detail-hero-img">
+        <img src="https://images.squarespace-cdn.com/content/v1/60b06e9e00df1646f49b349d/2e347240-c70a-4631-8e8d-63bcf49ab799/modular-figmaimage3.png" alt="Modular Figma component library showing design system architecture" />
+      </div>
+    </section>
+
+    <!-- BODY -->
+    <div class="cs-detail-body">
+
+      <!-- OVERVIEW -->
+      <div class="cs-body-section reveal">
+        <p class="cs-body-label">Overview</p>
+        <h2 class="cs-body-title">One design language across a fragmented product suite</h2>
+        <div class="cs-body-text">
+          <p>Roche's digital pathology suite spans multiple interconnected products — each with its own design team, working in parallel across different geographic locations. Over time, this had produced a sprawling Figma environment where components were duplicated, naming conventions differed between files, and updating a shared element meant tracking down every instance across multiple libraries manually.</p>
+          <p>The goal of this project was to create a single, modular component system that all product designers could adopt without disrupting their existing workflows — a shared source of truth that would keep the product suite visually and functionally consistent as it scaled.</p>
+        </div>
+      </div>
+
+      <!-- PROBLEM -->
+      <div class="cs-body-section reveal">
+        <p class="cs-body-label">Problem</p>
+        <h2 class="cs-body-title">Rebuilding the same components — without a shared language</h2>
+        <div class="cs-body-text">
+          <p>Without a unified component library, designers across the four products were effectively working in isolation. A button component in one product looked slightly different from the same component in another. Data tables, modals, and form inputs each had multiple competing versions, and there was no mechanism to propagate updates across products when design decisions changed.</p>
+          <p>This fragmentation had a compounding effect. Design reviews became longer as teams debated which version of a component was correct. Handoff documentation was inconsistent, creating confusion for engineering teams. And the cognitive overhead of managing individual component sets left designers with less time for the high-value UX work the products actually needed.</p>
+        </div>
+      </div>
+
+      <!-- PROCESS -->
+      <div class="cs-body-section reveal">
+        <p class="cs-body-label">Process</p>
+        <h2 class="cs-body-title">Audit, architect, build, adopt</h2>
+        <div class="cs-two-col">
+          <div class="cs-body-text">
+            <p>The project started with a systematic component audit across all four products — cataloguing every UI element in use, identifying duplicates, and assessing which variants were genuinely necessary versus which had drifted without purpose. This produced a clear inventory that formed the basis for consolidation decisions.</p>
+            <p>From the audit, I defined a token-based design architecture — separating primitive values (colour, spacing, radius, type scale) from semantic tokens (surface, border, interactive states) so that theming and brand updates could cascade across the entire system without component-by-component changes.</p>
+            <p>The Figma library was built with auto-layout throughout and a variant structure that mapped directly to the component API engineers would implement. Once the core library was stable, I ran a series of onboarding workshops with all 12 designers across the product teams — covering how to consume the library, how to contribute new components, and the governance process for proposing changes.</p>
+          </div>
+          <div class="cs-detail-img-block">
+            <img src="https://images.squarespace-cdn.com/content/v1/60b06e9e00df1646f49b349d/2e347240-c70a-4631-8e8d-63bcf49ab799/modular-figmaimage3.png" alt="Figma library structure showing token architecture and component variants" />
+          </div>
+        </div>
+      </div>
+
+      <!-- OUTCOMES -->
+      <div class="cs-body-section reveal">
+        <p class="cs-body-label">Outcomes</p>
+        <h2 class="cs-body-title">Faster design, consistent products</h2>
+        <div class="cs-body-text">
+          <p>Following rollout, the shared library became the primary source of truth for all four product teams. Prototyping velocity improved significantly as designers stopped rebuilding foundations and focused on solving interaction problems. The governance process established during onboarding has continued to support healthy library evolution without central bottlenecks.</p>
+        </div>
+        <div class="cs-outcomes">
+          <div class="cs-outcome-pill">
+            <span class="cs-outcome-dot"></span>
+            60% faster prototyping
+          </div>
+          <div class="cs-outcome-pill">
+            <span class="cs-outcome-dot"></span>
+            1 shared library across 4 products
+          </div>
+          <div class="cs-outcome-pill">
+            <span class="cs-outcome-dot"></span>
+            Adopted by 12 designers
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- NEXT CASE STUDY -->
+    <div class="cs-next">
+      <span class="cs-next-label">Next Case Study</span>
+      <a href="cs-right-place-right-time.html" class="cs-next-link" style="--c: #00C9F5;">
+        Right Place, Right Time
+        <svg class="cs-next-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+  </main>
+
+  <div class="page-content">
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="contact-header">
+        <p class="section-eyebrow">Get in touch</p>
+        <h2>Interested in connecting?</h2>
+      </div>
+      <div class="contact-inner reveal">
+        <p class="contact-sub">I'm always open to discussing new opportunities, collaborations, or just a good design conversation.</p>
+        <div class="contact-links">
+          <a href="http://LinkedIn.com/in/rowan-sexton" target="_blank" rel="noopener" class="contact-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="mailto:rowanhsexton@gmail.com" class="contact-btn contact-btn--ghost">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            rowanhsexton@gmail.com
+          </a>
+          <a href="https://www.rowanhsexton.com/s/UX-Design-Consultant-Resume-UPDATED-2025-no-pw-7.pdf" target="_blank" rel="noopener" class="contact-btn contact-btn--ghost">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="footer-inner">
+        <span class="footer-logo">Rowan Sexton</span>
+        <div class="footer-links">
+          <a href="http://LinkedIn.com/in/rowan-sexton" target="_blank" rel="noopener" class="footer-social">LinkedIn</a>
+        </div>
+        <a href="#" class="footer-top">Back to top ↑</a>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="main.js"></script>
+  <script>!function(){var u=window.UnicornStudio;if(u&&u.init){if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",function(){u.init()})}else{u.init()}}else{window.UnicornStudio={isInitialized:!1};var i=document.createElement("script");i.src="https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v2.1.4/dist/unicornStudio.umd.js",i.onload=function(){if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",function(){UnicornStudio.init()})}else{UnicornStudio.init()}},(document.head||document.body).appendChild(i)}}();</script>
+
+</body>
+</html>

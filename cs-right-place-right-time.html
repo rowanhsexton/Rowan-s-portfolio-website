@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Right Place, Right Time — Rowan Sexton</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body style="--c: #00C9F5;">
+
+  <!-- CURSOR GLOW -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Rowan Sexton</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-dropdown-wrapper">
+          <a href="index.html#case-studies" class="nav-link nav-dropdown-trigger active">
+            Case Studies
+            <svg class="dropdown-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none">
+              <path d="M1 1.5l5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <div class="nav-dropdown">
+            <div class="dropdown-inner">
+              <a href="cs-roche-image-viewer.html" class="dropdown-item">
+                <div class="dropdown-dot" style="background:#7C72FF;"></div>
+                <div>
+                  <span class="dropdown-item-label">Roche Image Viewer</span>
+                  <span class="dropdown-item-meta">UX Leadership · Digital Pathology</span>
+                </div>
+              </a>
+              <a href="cs-modular-figma.html" class="dropdown-item">
+                <div class="dropdown-dot" style="background:#4DE38A;"></div>
+                <div>
+                  <span class="dropdown-item-label">Modular Figma Frame</span>
+                  <span class="dropdown-item-meta">Design Systems · Figma</span>
+                </div>
+              </a>
+              <a href="cs-right-place-right-time.html" class="dropdown-item">
+                <div class="dropdown-dot" style="background:#00C9F5;"></div>
+                <div>
+                  <span class="dropdown-item-label">Right Place, Right Time</span>
+                  <span class="dropdown-item-meta">Interaction Design · Safety</span>
+                </div>
+              </a>
+              <a href="cs-algorithm-workflows.html" class="dropdown-item">
+                <div class="dropdown-dot" style="background:#A09CFF;"></div>
+                <div>
+                  <span class="dropdown-item-label">Algorithm Workflows</span>
+                  <span class="dropdown-item-meta">UX Research · Digital Pathology</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li><a href="about.html" class="nav-link">About Me</a></li>
+      </ul>
+      <a href="https://www.rowanhsexton.com/s/UX-Design-Consultant-Resume-UPDATED-2025-no-pw-7.pdf" target="_blank" rel="noopener" class="btn-resume">Download Resume</a>
+      <button class="nav-burger" aria-label="Open menu" id="burger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div id="navProgress"></div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-link">Home</a>
+      <button class="mobile-link mobile-dropdown-toggle" id="mobileDropdownToggle">
+        Case Studies
+        <svg class="dropdown-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none">
+          <path d="M1 1.5l5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <div class="mobile-dropdown-list" id="mobileDropdownList">
+        <a href="cs-roche-image-viewer.html" class="mobile-sub-link">Roche Image Viewer</a>
+        <a href="cs-modular-figma.html" class="mobile-sub-link">Modular Figma Frame</a>
+        <a href="cs-right-place-right-time.html" class="mobile-sub-link">Right Place, Right Time</a>
+        <a href="cs-algorithm-workflows.html" class="mobile-sub-link">Algorithm Workflows</a>
+      </div>
+      <a href="about.html" class="mobile-link">About Me</a>
+      <a href="https://www.rowanhsexton.com/s/UX-Design-Consultant-Resume-UPDATED-2025-no-pw-7.pdf" target="_blank" rel="noopener" class="mobile-link mobile-resume-link">Download Resume</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="cs-detail-hero">
+      <a href="index.html#case-studies" class="cs-detail-back">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        All Case Studies
+      </a>
+
+      <div class="cs-detail-meta">
+        <span class="cs-detail-tag">Interaction Design</span>
+        <span class="cs-detail-tag">Color Systems</span>
+        <span class="cs-detail-tag">Safety</span>
+        <span class="cs-detail-tag">2024</span>
+        <span class="cs-detail-tag">Roche</span>
+      </div>
+
+      <h1 class="cs-detail-title">Right Place, Right Time</h1>
+      <p class="cs-detail-summary">Designing an intuitive color status system to bridge the gap between a physical scanner instrument and its software — reducing confusion, improving workflow clarity, and protecting patient safety.</p>
+
+      <div class="cs-detail-stats">
+        <div class="cs-detail-stat">
+          <span class="cs-detail-stat-label">Role</span>
+          <span class="cs-detail-stat-value">Full Stack UX Designer</span>
+        </div>
+        <div class="cs-detail-stat">
+          <span class="cs-detail-stat-label">Timeline</span>
+          <span class="cs-detail-stat-value">2024</span>
+        </div>
+        <div class="cs-detail-stat">
+          <span class="cs-detail-stat-label">Platform</span>
+          <span class="cs-detail-stat-value">Scan Application + Instrument UI</span>
+        </div>
+        <div class="cs-detail-stat">
+          <span class="cs-detail-stat-label">Deliverables</span>
+          <span class="cs-detail-stat-value">Color System, Prototype, Dev Specs</span>
+        </div>
+      </div>
+
+      <div class="cs-detail-hero-img">
+        <img src="images/cs-right-place.png" alt="VENTANA DP 200 scanner with scan application software showing status indicators" />
+      </div>
+    </section>
+
+    <!-- BODY -->
+    <div class="cs-detail-body">
+
+      <!-- OVERVIEW -->
+      <div class="cs-body-section reveal">
+        <p class="cs-body-label">Overview</p>
+        <h2 class="cs-body-title">Where physical hardware meets digital interface</h2>
+        <div class="cs-body-text">
+          <p>Roche's scan application software interfaces with their flagship scanners to facilitate high-definition imaging and digitisation of pathology slides — enabling remote scoring from anywhere in the world. The system uses colored lights both in the UI and on the physical scanner instrument to communicate complex workflow and error statuses to lab operators.</p>
+          <p>The challenge: those two systems — the instrument lights and the software status indicators — were not speaking the same language. The disconnect was creating confusion in the lab, slowing down operators, and introducing a risk to patient safety through potential delays in care.</p>
+        </div>
+      </div>
+
+      <!-- PROBLEM -->
+      <div class="cs-body-section reveal">
+        <p class="cs-body-label">The Problem</p>
+        <h2 class="cs-body-title">A disconnect that put patient safety at risk</h2>
+        <div class="cs-body-text">
+          <p>The status indicator lights on the physical scanner instrument and those displayed in the software UI were misaligned — both in color meaning and in the states they communicated. For lab operators managing high-pressure workflows, this created a real cognitive burden: which light do I trust? What does this color actually mean right now?</p>
+          <p>This wasn't just a usability problem. In a clinical pathology environment, confusion around instrument status can directly delay diagnosis. A slide mishandled at the wrong moment, a workflow stalled while an operator deciphers conflicting signals — these have downstream consequences for patients. The design needed to eliminate that ambiguity entirely.</p>
+        </div>
+        <div class="cs-outcomes" style="margin-top: 32px;">
+          <div class="cs-outcome-pill">
+            <span class="cs-outcome-dot"></span>
+            Unintuitive status indicators
+          </div>
+          <div class="cs-outcome-pill">
+            <span class="cs-outcome-dot"></span>
+            Instrument vs. UI color mismatch
+          </div>
+          <div class="cs-outcome-pill">
+            <span class="cs-outcome-dot"></span>
+            Risk to patient safety
+          </div>
+          <div class="cs-outcome-pill">
+            <span class="cs-outcome-dot"></span>
+            Inconsistency across products
+          </div>
+        </div>
+      </div>
+
+      <!-- GOAL -->
+      <div class="cs-body-section reveal">
+        <p class="cs-body-label">Goal</p>
+        <h2 class="cs-body-title">One system. Two surfaces. Zero ambiguity.</h2>
+        <div class="cs-body-text">
+          <p>The goal was to strategically create an intuitive, unified connection between the scanner instrument and the user interface by addressing two things simultaneously:</p>
+          <p><strong style="color: var(--text);">1. Design a color system for status indicators</strong> that helps users intuitively navigate and understand workflow and error states — warnings, successes, issues, errors, and notifications — without needing to memorise meanings.</p>
+          <p><strong style="color: var(--text);">2. Align the status indicators with other Roche scan app software</strong> to create a learnable, consistent experience across the product family — so that operators moving between products carry their mental model with them.</p>
+        </div>
+      </div>
+
+      <!-- PROCESS -->
+      <div class="cs-body-section reveal">
+        <p class="cs-body-label">Process</p>
+        <h2 class="cs-body-title">Five phases from discovery to delivery</h2>
+
+        <!-- Phase steps -->
+        <div class="cs-process-steps">
+          <div class="cs-process-step">
+            <span class="cs-process-num">01</span>
+            <span class="cs-process-name">Discovery</span>
+            <p class="cs-process-desc">Understand the problems and frustrations users are facing and begin framing potential solutions.</p>
+          </div>
+          <div class="cs-process-step">
+            <span class="cs-process-num">02</span>
+            <span class="cs-process-name">Ideation</span>
+            <p class="cs-process-desc">Workshop workflow diagrams and wireframes with internal stakeholders to establish direction.</p>
+          </div>
+          <div class="cs-process-step">
+            <span class="cs-process-num">03</span>
+            <span class="cs-process-name">Design</span>
+            <p class="cs-process-desc">Create high-fidelity mockups and prototypes using research and stakeholder feedback.</p>
+          </div>
+          <div class="cs-process-step">
+            <span class="cs-process-num">04</span>
+            <span class="cs-process-name">Feedback</span>
+            <p class="cs-process-desc">Put vetted designs in front of stakeholders for quick iteration cycles.</p>
+          </div>
+          <div class="cs-process-step">
+            <span class="cs-process-num">05</span>
+            <span class="cs-process-name">Development</span>
+            <p class="cs-process-desc">Finalise mocks with detailed implementation notes and partner with developers through delivery.</p>
+          </div>
+        </div>
+
+        <div class="cs-body-text" style="margin-top: 48px;">
+          <p><strong style="color: var(--text);">Discovery</strong> started with conversations with subject matter experts and a full review of all available scanner documentation. I focused on three core questions: who are the users and what do they need from status indicators? Where exactly are the gaps between the instrument lights and the UI status bars? And what constraints exist for implementation — both technical and across similar products?</p>
+          <p><strong style="color: var(--text);">Ideation</strong> brought experienced stakeholders together to map currently implemented color statuses and identify commonalities with similar Roche products. From there, we assigned clear semantic meaning to each color — warnings, successes, issues, errors, and notifications — creating a shared vocabulary before a single pixel was designed.</p>
+          <p><strong style="color: var(--text);">Design</strong> was where the real challenge emerged: how do you prototype the interaction between a physical device and its software without access to either? I built a high-fidelity prototype in Figma that included a miniature avatar of the scanner instrument inside the interface itself. Status light colors on the instrument avatar mirrored those in the UI — blinking lights blinked in sync, red error states halted the workflow just as they would on the real scanner. It was a completely modular, editable representation of a real user workflow.</p>
+          <p><strong style="color: var(--text);">Feedback</strong> sessions used this prototype to drive productive stakeholder discussions in real time — no physical scanner needed, no code changes required. Stakeholders could see color combinations working live across both surfaces simultaneously, enabling rapid iteration toward a vetted outcome.</p>
+          <p><strong style="color: var(--text);">Development</strong> involved close collaboration with the engineering team, tracking implementation in regular meetings and demoing progress to ensure the final product faithfully reflected the approved designs.</p>
+        </div>
+      </div>
+
+      <!-- CHALLENGE -->
+      <div class="cs-body-section reveal">
+        <p class="cs-body-label">Business Challenge</p>
+        <h2 class="cs-body-title">Prototyping a physical device without touching one</h2>
+        <div class="cs-two-col">
+          <div class="cs-body-text">
+            <p>The central design challenge was unique: I needed to visually communicate and discuss design decisions involving a physical instrument — without access to that instrument, and without the ability to modify production code to test color combinations live.</p>
+            <p>The solution was to treat the prototype itself as a communication tool. By embedding a faithful digital replica of the scanner inside the Figma prototype, I created a shared reference point that made design decisions legible to developers, stakeholders, and product owners alike — eliminating ambiguity and compressing the feedback loop significantly.</p>
+            <p>A second constraint was the hardware itself: the scanner's LED system had a fixed palette of available colors. The design system had to work within those hardware limits, mapping the right semantic meaning to each available light color rather than designing freely and discovering limitations late.</p>
+          </div>
+          <div class="cs-detail-img-block">
+            <img src="images/cs-right-place.png" alt="Scanner with digital interface showing synchronized status indicators" />
+          </div>
+        </div>
+      </div>
+
+      <!-- OUTCOMES -->
+      <div class="cs-body-section reveal">
+        <p class="cs-body-label">Outcome</p>
+        <h2 class="cs-body-title">On time, within scope, and out of the critical path</h2>
+        <div class="cs-body-text">
+          <p>The final color status system was delivered on time and within scope — complete with detailed implementation documentation for the development team. By creating a novel method of prototyping a physical device digitally, the project massively reduced the time and effort that would otherwise have been spent on back-and-forth between design and engineering, freeing both teams to focus on quality and iteration.</p>
+          <p>Critically, on-time delivery kept design out of the critical path — ensuring no downstream project activities were blocked, and that the product team could maintain their development timeline without compromise.</p>
+        </div>
+        <div class="cs-outcomes">
+          <div class="cs-outcome-pill">
+            <span class="cs-outcome-dot"></span>
+            Delivered on time &amp; within scope
+          </div>
+          <div class="cs-outcome-pill">
+            <span class="cs-outcome-dot"></span>
+            Novel physical-digital prototype method
+          </div>
+          <div class="cs-outcome-pill">
+            <span class="cs-outcome-dot"></span>
+            Unified color system across products
+          </div>
+          <div class="cs-outcome-pill">
+            <span class="cs-outcome-dot"></span>
+            Design kept out of critical path
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- NEXT CASE STUDY -->
+    <div class="cs-next">
+      <span class="cs-next-label">Next Case Study</span>
+      <a href="cs-algorithm-workflows.html" class="cs-next-link" style="--c: #A09CFF;">
+        Algorithm Workflows
+        <svg class="cs-next-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+  </main>
+
+  <div class="page-content">
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="contact-header">
+        <p class="section-eyebrow">Get in touch</p>
+        <h2>Interested in connecting?</h2>
+      </div>
+      <div class="contact-inner reveal">
+        <p class="contact-sub">I'm always open to discussing new opportunities, collaborations, or just a good design conversation.</p>
+        <div class="contact-links">
+          <a href="http://LinkedIn.com/in/rowan-sexton" target="_blank" rel="noopener" class="contact-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="mailto:rowanhsexton@gmail.com" class="contact-btn contact-btn--ghost">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            rowanhsexton@gmail.com
+          </a>
+          <a href="https://www.rowanhsexton.com/s/UX-Design-Consultant-Resume-UPDATED-2025-no-pw-7.pdf" target="_blank" rel="noopener" class="contact-btn contact-btn--ghost">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="footer-inner">
+        <span class="footer-logo">Rowan Sexton</span>
+        <div class="footer-links">
+          <a href="http://LinkedIn.com/in/rowan-sexton" target="_blank" rel="noopener" class="footer-social">LinkedIn</a>
+        </div>
+        <a href="#" class="footer-top">Back to top ↑</a>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="main.js"></script>
+  <script>!function(){var u=window.UnicornStudio;if(u&&u.init){if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",function(){u.init()})}else{u.init()}}else{window.UnicornStudio={isInitialized:!1};var i=document.createElement("script");i.src="https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v2.1.4/dist/unicornStudio.umd.js",i.onload=function(){if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",function(){UnicornStudio.init()})}else{UnicornStudio.init()}},(document.head||document.body).appendChild(i)}}();</script>
+
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Rowan Sexton</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- CURSOR GLOW -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Rowan Sexton</a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+
+        <li class="nav-dropdown-wrapper">
+          <a href="index.html#case-studies" class="nav-link nav-dropdown-trigger">
+            Case Studies
+            <svg class="dropdown-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none">
+              <path d="M1 1.5l5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <div class="nav-dropdown">
+            <div class="dropdown-inner">
+              <a href="cs-roche-image-viewer.html" class="dropdown-item">
+                <div class="dropdown-dot" style="background:#7C72FF;"></div>
+                <div>
+                  <span class="dropdown-item-label">Roche Image Viewer</span>
+                  <span class="dropdown-item-meta">UX Leadership · Digital Pathology</span>
+                </div>
+              </a>
+              <a href="cs-modular-figma.html" class="dropdown-item">
+                <div class="dropdown-dot" style="background:#4DE38A;"></div>
+                <div>
+                  <span class="dropdown-item-label">Modular Figma Frame</span>
+                  <span class="dropdown-item-meta">Design Systems · Figma</span>
+                </div>
+              </a>
+              <a href="cs-right-place-right-time.html" class="dropdown-item">
+                <div class="dropdown-dot" style="background:#00C9F5;"></div>
+                <div>
+                  <span class="dropdown-item-label">Right Place, Right Time</span>
+                  <span class="dropdown-item-meta">Interaction Design · Safety</span>
+                </div>
+              </a>
+              <a href="cs-algorithm-workflows.html" class="dropdown-item">
+                <div class="dropdown-dot" style="background:#A09CFF;"></div>
+                <div>
+                  <span class="dropdown-item-label">Algorithm Workflows</span>
+                  <span class="dropdown-item-meta">UX Research · Digital Pathology</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <li><a href="about.html" class="nav-link active">About Me</a></li>
+      </ul>
+
+      <a href="https://www.rowanhsexton.com/s/UX-Design-Consultant-Resume-UPDATED-2025-no-pw-7.pdf" target="_blank" rel="noopener" class="btn-resume">Download Resume</a>
+
+      <button class="nav-burger" aria-label="Open menu" id="burger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div id="navProgress"></div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-link">Home</a>
+      <button class="mobile-link mobile-dropdown-toggle" id="mobileDropdownToggle">
+        Case Studies
+        <svg class="dropdown-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none">
+          <path d="M1 1.5l5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <div class="mobile-dropdown-list" id="mobileDropdownList">
+        <a href="cs-roche-image-viewer.html" class="mobile-sub-link">Roche Image Viewer</a>
+        <a href="cs-modular-figma.html" class="mobile-sub-link">Modular Figma Frame</a>
+        <a href="cs-right-place-right-time.html" class="mobile-sub-link">Right Place, Right Time</a>
+        <a href="cs-algorithm-workflows.html" class="mobile-sub-link">Algorithm Workflows</a>
+      </div>
+      <a href="about.html" class="mobile-link active">About Me</a>
+      <a href="https://www.rowanhsexton.com/s/UX-Design-Consultant-Resume-UPDATED-2025-no-pw-7.pdf" target="_blank" rel="noopener" class="mobile-link mobile-resume-link">Download Resume</a>
+    </div>
+  </nav>
+
+  <!-- ABOUT HERO -->
+  <section id="about-hero">
+    <div class="unicorn-bg">
+      <div data-us-project="guBFbtYWCRjCdVjdCAt4" style="width:100%;height:100%;"></div>
+    </div>
+
+    <div class="about-hero">
+
+      <div class="about-photo-wrap reveal">
+        <img
+          src="images/image_123650291-fotor-20240908193110-min.png"
+          alt="Rowan Sexton"
+          class="about-photo"
+          loading="eager"
+        />
+      </div>
+
+      <div class="about-intro reveal">
+        <p class="section-eyebrow">About me</p>
+        <h1>Hi, I'm <span class="text-gradient">Rowan.</span></h1>
+        <p>I'm a <strong>Senior UX Designer</strong> at <span class="highlight-pill">Concord USA</span>, currently embedded with <span class="highlight-pill">Roche</span> designing digital pathology instruments and software products used in clinical and research labs worldwide.</p>
+        <p>I bring together <strong>7+ years of design experience</strong>, a passion for human-centred problem solving, and a background in psychology to create products that are both intuitive and impactful — especially in high-stakes medical environments where clarity and safety matter most.</p>
+        <div class="about-cta">
+          <a href="https://www.rowanhsexton.com/s/UX-Design-Consultant-Resume-UPDATED-2025-no-pw-7.pdf" target="_blank" rel="noopener" class="btn-primary">View Resume</a>
+          <a href="http://LinkedIn.com/in/rowan-sexton" target="_blank" rel="noopener" class="btn-ghost">LinkedIn</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PAGE CONTENT -->
+  <div class="page-content">
+
+    <!-- ABOUT CONTENT -->
+    <div class="about-content">
+
+      <!-- EDUCATION -->
+      <div class="about-block reveal">
+        <h2 class="about-block-title">Education</h2>
+        <div class="edu-list">
+          <div class="edu-item">
+            <div class="edu-icon" style="background: rgba(124,114,255,0.14);">🎓</div>
+            <div>
+              <div class="edu-degree">Master of Human-Computer Interaction (M.HCI)</div>
+              <div class="edu-school">Iowa State University</div>
+            </div>
+            <span class="edu-gpa">4.0 GPA</span>
+          </div>
+          <div class="edu-item">
+            <div class="edu-icon" style="background: rgba(0,201,245,0.13);">🧠</div>
+            <div>
+              <div class="edu-degree">Bachelor of Arts — Psychology (B.A.)</div>
+              <div class="edu-school">University of Minnesota</div>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-icon" style="background: rgba(0,201,245,0.13);">💻</div>
+            <div>
+              <div class="edu-degree">Certificate — Web Design</div>
+              <div class="edu-school">Minneapolis Community & Technical College · HTML, CSS &amp; JavaScript</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SKILLS SNAPSHOT -->
+      <div class="about-block reveal">
+        <h2 class="about-block-title">What I do</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <div class="skill-icon" style="background: rgba(124,114,255,0.14); color: #7C72FF;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+              </div>
+              <h3>UI Design</h3>
+            </div>
+            <ul class="skill-list">
+              <li>Workflow Mapping</li>
+              <li>Wireframing &amp; Storyboarding</li>
+              <li>High-fidelity Prototyping</li>
+              <li>Iconography &amp; Microcopy</li>
+              <li>Design System Creation &amp; Management</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <div class="skill-icon" style="background: rgba(0,201,245,0.13); color: #00C9F5;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+              </div>
+              <h3>UX Research</h3>
+            </div>
+            <ul class="skill-list">
+              <li>User Interviews &amp; Surveys</li>
+              <li>Personas &amp; Affinity Mapping</li>
+              <li>Workshopping</li>
+              <li>Feedback Synthesis</li>
+              <li>Data Visualization</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <div class="skill-icon" style="background: rgba(77,227,138,0.12); color: #4DE38A;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </div>
+              <h3>Usability Engineering</h3>
+            </div>
+            <ul class="skill-list">
+              <li>Formative &amp; Summative Studies</li>
+              <li>Task Analyses</li>
+              <li>Human Factors</li>
+              <li>Documentation</li>
+              <li>FDA Submissions</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <div class="skill-icon" style="background: rgba(0,201,245,0.13); color: #00C9F5;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              </div>
+              <h3>Tools</h3>
+            </div>
+            <ul class="skill-list">
+              <li>Figma &amp; FigJam</li>
+              <li>Adobe Creative Suite</li>
+              <li>Jira &amp; Miro</li>
+              <li>Google Suite &amp; Microsoft Office</li>
+              <li>HTML, CSS &amp; JavaScript</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- INTERESTS -->
+      <div class="about-block reveal">
+        <h2 class="about-block-title">Outside of work</h2>
+        <div class="interests-grid">
+          <span class="interest-chip">🎵 Music</span>
+          <span class="interest-chip">🍕 Food</span>
+          <span class="interest-chip">🎨 Art</span>
+          <span class="interest-chip">🐾 Animals</span>
+          <span class="interest-chip">🪴 Plants</span>
+          <span class="interest-chip">🧗 Rock Climbing</span>
+          <span class="interest-chip">⛳ Golf</span>
+          <span class="interest-chip">🏓 Pickleball</span>
+          <span class="interest-chip">🏕️ Camping</span>
+          <span class="interest-chip">⛵ Boating</span>
+          <span class="interest-chip">🚀 Space Exploration</span>
+          <span class="interest-chip">✈️ Aeronautics</span>
+          <span class="interest-chip">🏥 Healthcare Technology</span>
+        </div>
+      </div>
+
+      <!-- PHOTO GALLERY -->
+      <div class="about-block reveal">
+        <h2 class="about-block-title">A few snapshots</h2>
+        <div class="about-photos-grid">
+          <div class="about-photo-item">
+            <img src="images/IMG_6277.jpg" alt="Wedding" loading="lazy" />
+            <span class="about-photo-caption">Getting married 💍</span>
+          </div>
+          <div class="about-photo-item">
+            <img src="images/IMG_6645.jpg" alt="Rock climbing" loading="lazy" />
+            <span class="about-photo-caption">Rock climbing 🧗</span>
+          </div>
+          <div class="about-photo-item">
+            <img src="images/IMG_4370.jpg" alt="Travels in Spain" loading="lazy" />
+            <span class="about-photo-caption">Travels in Spain 🇪🇸</span>
+          </div>
+          <div class="about-photo-item">
+            <img src="images/IMG_5576.jpg" alt="Kennedy Space Center" loading="lazy" />
+            <span class="about-photo-caption">Kennedy Space Center 🚀</span>
+          </div>
+          <div class="about-photo-item">
+            <img src="images/IMG-7911.webp" alt="With Bonnie" loading="lazy" />
+            <span class="about-photo-caption">My dog Bonnie 🐾</span>
+          </div>
+          <div class="about-photo-item">
+            <img src="images/unnamed+(3).webp" alt="With my nephew" loading="lazy" />
+            <span class="about-photo-caption">With my nephew 👶</span>
+          </div>
+          <div class="about-photo-item">
+            <img src="images/IMG-8107.webp" alt="Childhood photo" loading="lazy" />
+            <span class="about-photo-caption">Growing up 📸</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="contact-header">
+        <p class="section-eyebrow">Get in touch</p>
+        <h2>Interested in connecting?</h2>
+      </div>
+      <div class="contact-inner reveal">
+        <p class="contact-sub">I'm always open to discussing new opportunities, collaborations, or just a good design conversation.</p>
+        <div class="contact-links">
+          <a href="http://LinkedIn.com/in/rowan-sexton" target="_blank" rel="noopener" class="contact-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="mailto:rowanhsexton@gmail.com" class="contact-btn contact-btn--ghost">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            rowanhsexton@gmail.com
+          </a>
+          <a href="https://www.rowanhsexton.com/s/UX-Design-Consultant-Resume-UPDATED-2025-no-pw-7.pdf" target="_blank" rel="noopener" class="contact-btn contact-btn--ghost">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="footer-inner">
+        <span class="footer-logo">Rowan Sexton</span>
+        <div class="footer-links">
+          <a href="http://LinkedIn.com/in/rowan-sexton" target="_blank" rel="noopener" class="footer-social">LinkedIn</a>
+        </div>
+        <a href="#about-hero" class="footer-top">Back to top ↑</a>
+      </div>
+    </footer>
+
+  </div><!-- /page-content -->
+
+  <script src="main.js"></script>
+  <!-- Unicorn Studio SDK -->
+  <script>!function(){var u=window.UnicornStudio;if(u&&u.init){if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",function(){u.init()})}else{u.init()}}else{window.UnicornStudio={isInitialized:!1};var i=document.createElement("script");i.src="https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v2.1.4/dist/unicornStudio.umd.js",i.onload=function(){if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",function(){UnicornStudio.init()})}else{UnicornStudio.init()}},(document.head||document.body).appendChild(i)}}();</script>
+</body>
+</html>

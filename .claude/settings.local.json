@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:rostislavgeorgiev.framer.website)",
+      "WebSearch",
+      "WebFetch(domain:www.rowanhsexton.com)",
+      "WebFetch(domain:unicorn.studio)",
+      "WebFetch(domain:app.unicorn.studio)",
+      "WebFetch(domain:framer.com)",
+      "WebFetch(domain:sweet-apricot-737170.framer.app)"
+    ]
+  }
+}

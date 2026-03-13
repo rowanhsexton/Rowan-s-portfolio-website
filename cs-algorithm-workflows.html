@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Algorithm Workflows — Rowan Sexton</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body style="--c: #A09CFF;">
+
+  <!-- CURSOR GLOW -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Rowan Sexton</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-dropdown-wrapper">
+          <a href="index.html#case-studies" class="nav-link nav-dropdown-trigger active">
+            Case Studies
+            <svg class="dropdown-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none">
+              <path d="M1 1.5l5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <div class="nav-dropdown">
+            <div class="dropdown-inner">
+              <a href="cs-roche-image-viewer.html" class="dropdown-item">
+                <div class="dropdown-dot" style="background:#7C72FF;"></div>
+                <div>
+                  <span class="dropdown-item-label">Roche Image Viewer</span>
+                  <span class="dropdown-item-meta">UX Leadership · Digital Pathology</span>
+                </div>
+              </a>
+              <a href="cs-modular-figma.html" class="dropdown-item">
+                <div class="dropdown-dot" style="background:#4DE38A;"></div>
+                <div>
+                  <span class="dropdown-item-label">Modular Figma Frame</span>
+                  <span class="dropdown-item-meta">Design Systems · Figma</span>
+                </div>
+              </a>
+              <a href="cs-right-place-right-time.html" class="dropdown-item">
+                <div class="dropdown-dot" style="background:#00C9F5;"></div>
+                <div>
+                  <span class="dropdown-item-label">Right Place, Right Time</span>
+                  <span class="dropdown-item-meta">Interaction Design · Safety</span>
+                </div>
+              </a>
+              <a href="cs-algorithm-workflows.html" class="dropdown-item">
+                <div class="dropdown-dot" style="background:#A09CFF;"></div>
+                <div>
+                  <span class="dropdown-item-label">Algorithm Workflows</span>
+                  <span class="dropdown-item-meta">UX Research · Digital Pathology</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li><a href="about.html" class="nav-link">About Me</a></li>
+      </ul>
+      <a href="https://www.rowanhsexton.com/s/UX-Design-Consultant-Resume-UPDATED-2025-no-pw-7.pdf" target="_blank" rel="noopener" class="btn-resume">Download Resume</a>
+      <button class="nav-burger" aria-label="Open menu" id="burger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div id="navProgress"></div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-link">Home</a>
+      <button class="mobile-link mobile-dropdown-toggle" id="mobileDropdownToggle">
+        Case Studies
+        <svg class="dropdown-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none">
+          <path d="M1 1.5l5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <div class="mobile-dropdown-list" id="mobileDropdownList">
+        <a href="cs-roche-image-viewer.html" class="mobile-sub-link">Roche Image Viewer</a>
+        <a href="cs-modular-figma.html" class="mobile-sub-link">Modular Figma Frame</a>
+        <a href="cs-right-place-right-time.html" class="mobile-sub-link">Right Place, Right Time</a>
+        <a href="cs-algorithm-workflows.html" class="mobile-sub-link">Algorithm Workflows</a>
+      </div>
+      <a href="about.html" class="mobile-link">About Me</a>
+      <a href="https://www.rowanhsexton.com/s/UX-Design-Consultant-Resume-UPDATED-2025-no-pw-7.pdf" target="_blank" rel="noopener" class="mobile-link mobile-resume-link">Download Resume</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="cs-detail-hero">
+      <a href="index.html#case-studies" class="cs-detail-back">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        All Case Studies
+      </a>
+
+      <div class="cs-detail-meta">
+        <span class="cs-detail-tag">UX Research</span>
+        <span class="cs-detail-tag">Usability Testing</span>
+        <span class="cs-detail-tag">Digital Pathology</span>
+        <span class="cs-detail-tag">2023</span>
+        <span class="cs-detail-tag">Roche</span>
+      </div>
+
+      <h1 class="cs-detail-title">Algorithm Workflows</h1>
+      <p class="cs-detail-summary">Designing end-to-end workflows for novel digital pathology algorithms in Roche's uPath platform — balancing usability needs of pathologists with the constraints of an existing modular system.</p>
+
+      <div class="cs-detail-stats">
+        <div class="cs-detail-stat">
+          <span class="cs-detail-stat-label">Role</span>
+          <span class="cs-detail-stat-value">Full Stack UX Designer</span>
+        </div>
+        <div class="cs-detail-stat">
+          <span class="cs-detail-stat-label">Timeline</span>
+          <span class="cs-detail-stat-value">2023</span>
+        </div>
+        <div class="cs-detail-stat">
+          <span class="cs-detail-stat-label">Platform</span>
+          <span class="cs-detail-stat-value">uPath Web Application</span>
+        </div>
+        <div class="cs-detail-stat">
+          <span class="cs-detail-stat-label">Deliverables</span>
+          <span class="cs-detail-stat-value">Workflows, Prototypes, Usability Studies</span>
+        </div>
+      </div>
+
+      <div class="cs-detail-hero-img">
+        <img src="images/cs-algorithm-workflows.png" alt="Digital pathology algorithm workflow in uPath" />
+      </div>
+    </section>
+
+    <!-- BODY -->
+    <div class="cs-detail-body">
+
+      <!-- PROBLEM -->
+      <div class="cs-body-section reveal">
+        <p class="cs-body-label">The Problem</p>
+        <h2 class="cs-body-title">How do you design for both novices and power users — on a platform you didn't build?</h2>
+        <div class="cs-body-text">
+          <p>Roche's uPath digital pathology software employs multiple slide analysis algorithms that assist pathologists by providing relevant data, detecting tumor or non-tumor tissue, and scoring slides. Each algorithm has a unique set of inputs, outputs, and user needs — and each one required its own purpose-built workflow.</p>
+          <p>The core design challenge was two-sided: <strong style="color: var(--text);">how do you cater a new algorithm's workflow and UI to meet the usability needs of users, while simultaneously aligning with the constraints of an existing platform?</strong></p>
+        </div>
+
+        <div class="cs-outcomes" style="margin-top: 32px;">
+          <div class="cs-outcome-pill">
+            <span class="cs-outcome-dot"></span>
+            Intuitive for newcomers to digital pathology
+          </div>
+          <div class="cs-outcome-pill">
+            <span class="cs-outcome-dot"></span>
+            Powerful enough for experienced power users
+          </div>
+          <div class="cs-outcome-pill">
+            <span class="cs-outcome-dot"></span>
+            Trustworthy — especially for AI-automated scoring
+          </div>
+          <div class="cs-outcome-pill">
+            <span class="cs-outcome-dot"></span>
+            Compatible with a modular algorithm marketplace
+          </div>
+        </div>
+
+        <div class="cs-body-text" style="margin-top: 32px;">
+          <p>A further complication: each algorithm is different. Some require pathologist input at every step; others score slides automatically with little or no interaction. Building trust in those automated algorithms — particularly among users new to AI-assisted pathology — was a persistent challenge that shaped design decisions across every workflow.</p>
+        </div>
+      </div>
+
+      <!-- SOLUTION -->
+      <div class="cs-body-section reveal">
+        <p class="cs-body-label">The Solution</p>
+        <h2 class="cs-body-title">A repeatable five-phase design process, applied uniquely to each algorithm</h2>
+        <div class="cs-body-text">
+          <p>Rather than a one-size-fits-all approach, I developed a structured but flexible process that could be adapted to the specific demands of each algorithm — ensuring every workflow was grounded in user needs, validated through research, and built within real platform constraints.</p>
+        </div>
+
+        <div class="cs-process-steps" style="margin-bottom: 48px;">
+          <div class="cs-process-step">
+            <span class="cs-process-num">01</span>
+            <span class="cs-process-name">Discovery</span>
+            <p class="cs-process-desc">Speak to SMEs and review available materials to understand the users, the problem the algorithm solves, and the implementation constraints.</p>
+          </div>
+          <div class="cs-process-step">
+            <span class="cs-process-num">02</span>
+            <span class="cs-process-name">Ideation</span>
+            <p class="cs-process-desc">Weekly workshops with designers, developers, PMs, SMEs, and users to refine workflow diagrams, storyboards, and wireframes.</p>
+          </div>
+          <div class="cs-process-step">
+            <span class="cs-process-num">03</span>
+            <span class="cs-process-name">Design</span>
+            <p class="cs-process-desc">High-fidelity mockups and fully interactive prototypes in Figma — one for stakeholder demos, separate versions built for usability studies.</p>
+          </div>
+          <div class="cs-process-step">
+            <span class="cs-process-num">04</span>
+            <span class="cs-process-name">Research</span>
+            <p class="cs-process-desc">Usability tests and cognitive walkthroughs with internal and external pathologists. Findings synthesized via affinity mapping into a documented report.</p>
+          </div>
+          <div class="cs-process-step">
+            <span class="cs-process-num">05</span>
+            <span class="cs-process-name">Development</span>
+            <p class="cs-process-desc">Close collaboration with engineers to ensure designs translate faithfully. Progress tracked in weekly demos with the full project team.</p>
+          </div>
+        </div>
+
+        <div class="cs-two-col">
+          <div class="cs-body-text">
+            <p><strong style="color: var(--text);">Discovery</strong> began with conversations with subject matter experts and a full review of the algorithm's clinical use case — establishing who the users are, what they need from the workflow, and what technical or platform constraints exist before any design work began.</p>
+            <p><strong style="color: var(--text);">Ideation</strong> brought the full cross-functional team into weekly workshops. Designers presented workflow diagrams and wireframes to drive structured discussion with developers, product managers, SMEs, and users — pushing designs as far as possible before moving to high fidelity.</p>
+            <p><strong style="color: var(--text);">Design</strong> used Figma to recreate the uPath interface with the new algorithm workflow fully illustrated at high fidelity. Each step in the workflow was detailed in its ideal state, and interactive prototypes were created — one version for presenting to stakeholders, and separate versions purpose-built for use in usability studies.</p>
+            <p><strong style="color: var(--text);">Research</strong> put designs in front of real pathologists — 1-hour sessions using interview guides, task lists, and cognitive walkthroughs. After each study, findings were synthesized through affinity mapping and documented in a formal report shared with the project team.</p>
+            <p><strong style="color: var(--text);">Iteration</strong> ran continuously — but most often followed user feedback sessions. Research findings were brought back to stakeholders and used to drive targeted design and workflow changes before handing off to development.</p>
+          </div>
+          <div class="cs-detail-img-block">
+            <img src="images/cs-algorithm-workflows.png" alt="High-fidelity prototype of algorithm workflow in uPath" />
+          </div>
+        </div>
+      </div>
+
+      <!-- IMPACT -->
+      <div class="cs-body-section reveal">
+        <p class="cs-body-label">The Impact</p>
+        <h2 class="cs-body-title">On time, positively received, and the foundation for future work</h2>
+        <div class="cs-body-text">
+          <p>Designs were delivered on time and within scope across multiple algorithm workflows. By staying out of the critical path, design ensured timely continuation of development activities — preventing downstream delays and keeping the project on schedule.</p>
+          <p>Feedback from pathologists during usability testing was positive overall, and the research findings generated through the process were leveraged beyond these workflows — contributing to other project activities and informing the broader platform roadmap. Most significantly, the quality of delivery solidified an ongoing relationship with Roche, securing additional design work for future algorithm iterations.</p>
+        </div>
+        <div class="cs-outcomes">
+          <div class="cs-outcome-pill">
+            <span class="cs-outcome-dot"></span>
+            Delivered on time &amp; within scope
+          </div>
+          <div class="cs-outcome-pill">
+            <span class="cs-outcome-dot"></span>
+            Positive feedback from pathologist usability testing
+          </div>
+          <div class="cs-outcome-pill">
+            <span class="cs-outcome-dot"></span>
+            Design stayed out of the critical path
+          </div>
+          <div class="cs-outcome-pill">
+            <span class="cs-outcome-dot"></span>
+            Secured additional Roche work for future iterations
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- NEXT CASE STUDY -->
+    <div class="cs-next">
+      <span class="cs-next-label">Next Case Study</span>
+      <a href="cs-roche-image-viewer.html" class="cs-next-link" style="--c: #7C72FF;">
+        Roche Image Viewer
+        <svg class="cs-next-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+  </main>
+
+  <div class="page-content">
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="contact-header">
+        <p class="section-eyebrow">Get in touch</p>
+        <h2>Interested in connecting?</h2>
+      </div>
+      <div class="contact-inner reveal">
+        <p class="contact-sub">I'm always open to discussing new opportunities, collaborations, or just a good design conversation.</p>
+        <div class="contact-links">
+          <a href="http://LinkedIn.com/in/rowan-sexton" target="_blank" rel="noopener" class="contact-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="mailto:rowanhsexton@gmail.com" class="contact-btn contact-btn--ghost">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            rowanhsexton@gmail.com
+          </a>
+          <a href="https://www.rowanhsexton.com/s/UX-Design-Consultant-Resume-UPDATED-2025-no-pw-7.pdf" target="_blank" rel="noopener" class="contact-btn contact-btn--ghost">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="footer-inner">
+        <span class="footer-logo">Rowan Sexton</span>
+        <div class="footer-links">
+          <a href="http://LinkedIn.com/in/rowan-sexton" target="_blank" rel="noopener" class="footer-social">LinkedIn</a>
+        </div>
+        <a href="#" class="footer-top">Back to top ↑</a>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="main.js"></script>
+  <script>!function(){var u=window.UnicornStudio;if(u&&u.init){if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",function(){u.init()})}else{u.init()}}else{window.UnicornStudio={isInitialized:!1};var i=document.createElement("script");i.src="https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v2.1.4/dist/unicornStudio.umd.js",i.onload=function(){if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",function(){UnicornStudio.init()})}else{UnicornStudio.init()}},(document.head||document.body).appendChild(i)}}();</script>
+
+</body>
+</html>
